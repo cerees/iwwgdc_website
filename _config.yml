@@ -1,0 +1,53 @@
+title: IWW General Defense Committee
+email: gdc@iww.org
+baseurl: ""
+url: "https://iwwgdc.org"
+description: The latest news and happenings from the IWW General Defense Committee! · An injury to one is an injury to all.
+
+future: true
+
+paypal: "iww.gdc.central@gmail.com"
+
+logo: /assets/logo.png
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/social.png
+
+twitter_username: IWW_GDC
+facebook_username: iwwgdc
+
+social:
+  name: IWW GDC
+  links:
+    - https://twitter.com/IWW_GDC
+    - https://facebook.com/iwwnyc
+
+twitter:
+  username: IWW_GDC
+  card: summary
+
+facebook:
+  publisher: iwwgdc
+
+markdown: kramdown
+
+kramdown:
+  parse_span_html: true
+  input: GFM
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+
+collections:
+  events:
+    output: true
+    path: ""
+    permalink: /events/:path/
+
+paginate: 5
+paginate_path: "/news/:num/"
